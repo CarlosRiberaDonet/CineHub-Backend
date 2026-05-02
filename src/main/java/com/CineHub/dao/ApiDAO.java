@@ -49,8 +49,6 @@ public class ApiDAO {
 
         String url = urlFilm + "?api_key=" + API_KEY;
 
-        System.out.println("Esta es la url construida: " + url);
-
         HttpHeaders headers = new HttpHeaders();
         headers.set("accept", "application/json");
 
@@ -107,8 +105,6 @@ public class ApiDAO {
     public String getFromApiKeyText(String urlFilm, String text) {
 
         String url = urlFilm + "?api_key=" + API_KEY + "&language=es-ES&query=" + text + "&page=1&include_adult=true";
-
-        System.out.println("Esta es la url construida: " + url);
 
         HttpHeaders headers = new HttpHeaders();
         headers.set("accept", "application/json");
